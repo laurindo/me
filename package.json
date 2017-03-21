@@ -2,14 +2,27 @@
   "name": "about-me",
   "version": "1.0.0",
   "description": "My projects, tips and stuff that I like to do",
-  "main": "entry.js",
+  "main": "app/entry.js",
   "dependencies": {
-    "webpack-dev-server": "^2.4.2",
-    "webpack": "^2.2.1"
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "jest": "^19.0.2",
+    "react-test-renderer": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
