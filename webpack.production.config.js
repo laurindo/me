@@ -1,5 +1,5 @@
 var path = require('path');
-var buildPath = path.resolve(__dirname, '', 'public');
+var buildPath = path.resolve(__dirname, '', 'build');
 var mainPath = path.resolve(__dirname, 'app', 'entry.js');
 
 module.exports = {
